@@ -20,7 +20,7 @@ for x in files_suf:
         break
     files = os.listdir(r_dir)
     for f in files:
-        if f.endswith(".jar.raw"):
+        if f.endswith(".apk.raw"):
             results[f] = run_result();
 for result_file in results:
     file_vals=[];
