@@ -1,4 +1,4 @@
-import Flow
+from Flow import Flow
 import sys
 import os
 import re
@@ -34,9 +34,9 @@ for result_file in results:
             results[result_file].setrecreates.append("-1");
     flow_start= file_vals[0];
     for flow in file_vals:
-        if(flow_start != flow){
+        if(flow_start != flow):
             results[result_file].deterministic = False;
-        }
+
         results[result_file].set_recreates = (flow_start == flow);
 
 print("configuration,project,setequality");
